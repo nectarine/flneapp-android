@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2ecdc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:kftc="http://schemas.android.com/apk/res/kr.or.kftc.appstore.android">
+    <RelativeLayout android:id="@id/title_layout" android:background="@drawable/tit_bg_01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ff483c34" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="모바일기기정보 등록" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:background="#fff0ede7" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="고객님의 모바일 기기 등록을 위해 아래 내용을 확인하시기 바랍니다." />
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#ff746760" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="등록방법" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff998e89" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="금융앱스토어 웹사이트  마이페이지> 모바일 기기 정보에서 모바일 기기 버튼을 클릭하시면, 등록번호가  발급됩니다. 발급된 등록번호를  입력하세요." />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff746760" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="PC" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="①" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="금융앱스토어 PC 웹사이트(www.fineapps.co.kr) 들어가기" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="②" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="회원가입 및 로그인" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="③" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="마이페이지 > 모바일기기정보 등록" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="④" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="&quot;인증번호 발급&quot; 버튼 클릭" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff746760" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="4.0dip" android:text="스마트폰" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="⑤" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff998e89" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="PC의 인증번호를 하단의 입력창에 입력" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="14.0dip" android:id="@id/auth_edit" android:background="@drawable/input_01" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="6.0dip" android:hint="인증번호 입력" android:singleLine="true" android:maxLength="6" android:layout_toLeftOf="@id/confirm_btn" android:inputType="number" />
+    </RelativeLayout>
+</LinearLayout>

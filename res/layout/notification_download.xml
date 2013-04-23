@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_img" android:background="@drawable/ic_launcher" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="12.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="12.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="left" android:id="@id/bank_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="기관명" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="left" android:id="@id/app_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="앱명" android:singleLine="true" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/progressbar" android:layout_width="fill_parent" android:layout_height="10.0dip" android:max="1000" android:progress="0" android:secondaryProgress="0" android:progressDrawable="@drawable/progressbar2" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="left" android:id="@id/result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="다운로드가 중지되었습니다." android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

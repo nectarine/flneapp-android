@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:kftc="http://schemas.android.com/apk/res/kr.or.kftc.appstore.android">
+    <RelativeLayout android:id="@id/title_layout" android:background="@drawable/top_bg_01" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/title_img" android:background="@drawable/top_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:background="#fff2ecdc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout" android:layout_below="@id/title_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff111111" android:gravity="center" android:background="@drawable/tit_bg_02" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="이용약관" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ScrollView android:background="@drawable/bg_round" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:layout_above="@id/check1_layout">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff8a807a" android:id="@id/terms1_text" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="이용약관 내용" />
+                </ScrollView>
+                <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/check1_layout" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/check1_btn" android:background="@drawable/ch_box_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:contentDescription="이용약관 동의 체크 박스" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff6f6560" android:id="@id/check1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="이용약관 동의" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff111111" android:gravity="center" android:background="@drawable/tit_bg_02" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="개인정보 수집 이용 제공 동의" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ScrollView android:background="@drawable/bg_round" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:layout_above="@id/check2_layout">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff8a807a" android:id="@id/terms2_text" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="개인정보 수집 이용 제공 동의" />
+                </ScrollView>
+                <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/check2_layout" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/check2_btn" android:background="@drawable/ch_box_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:contentDescription="개인정보 수집 이용 제공 동의 체크 박스" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff6f6560" android:id="@id/check2_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="개인정보 수집 이용 제공 동의" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bottom_layout" android:background="#ffdaefed" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2ecdc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:kftc="http://schemas.android.com/apk/res/kr.or.kftc.appstore.android">
+    <RelativeLayout android:id="@id/title_layout" android:background="@drawable/tit_bg_01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ff483c34" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="이벤트" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:background="#ffc2b3aa" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/box02" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff474341" android:layout_gravity="center_vertical" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="이벤트" android:singleLine="true" />
+            <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:background="@drawable/date_bg_01" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="10.0sp" android:textColor="#ff69615d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="이벤트 기간 : " />
+                <TextView android:textSize="10.0sp" android:textColor="#ffec6f00" android:id="@id/period_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0sp" android:textColor="#ff474341" android:layout_gravity="left" android:id="@id/content_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="70.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

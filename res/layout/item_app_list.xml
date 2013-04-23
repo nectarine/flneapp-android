@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffc2b3aa" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:kftc="http://schemas.android.com/apk/res/kr.or.kftc.appstore.android">
+    <RelativeLayout android:id="@id/item_layout" android:background="@drawable/list_03" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <ImageView android:id="@id/flag_img" android:background="@drawable/icon_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center" android:id="@id/icon_layout" android:background="@drawable/app_bg01" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/icon_img" android:background="@drawable/applist_img_def" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ff111111" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="우리은행 " android:singleLine="true" android:layout_toLeftOf="@id/app_btn_layout" android:layout_toRightOf="@id/icon_layout" android:layout_alignParentTop="true" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff111111" android:id="@id/category_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="뱅킹 | 우리은행" android:layout_toRightOf="@id/icon_layout" android:layout_below="@id/title_text" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/date_layout" android:background="@drawable/date_bg_01" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="10.0sp" android:textColor="#ff594b45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="등록일 : " />
+            <TextView android:textSize="10.0sp" android:textColor="#ffec6f00" android:id="@id/date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2012.04.29" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/app_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

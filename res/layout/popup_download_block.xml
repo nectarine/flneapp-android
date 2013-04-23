@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:kftc="http://schemas.android.com/apk/res/kr.or.kftc.appstore.android">
+    <RelativeLayout android:background="@drawable/bank_top" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="미지원 모바일 기기" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bank_bg01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:background="@drawable/bg_normal" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textColor="#ff333333" android:gravity="top|left|center" android:id="@id/content_text" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+            <Button android:textSize="15.0sp" android:id="@id/confirm_btn" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="확인" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

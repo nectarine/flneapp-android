@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2ecdc" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:kftc="http://schemas.android.com/apk/res/kr.or.kftc.appstore.android">
+    <RelativeLayout android:background="@drawable/box01_h91" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ff69615d" android:id="@id/comment_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BLUEXXX" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffec6f00" android:id="@id/comment_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2012.02.02" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/comment_line" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.70000005dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/comment_date" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff93847d" android:id="@id/comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/comment_line" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/comment_reply_layout" android:background="@drawable/box01_h91" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="6.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ff69615d" android:id="@id/comment_reply_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="BLUEXXX" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffec6f00" android:id="@id/comment_reply_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2012.02.02" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/comment_reply_line" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.70000005dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/comment_reply_date" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff93847d" android:id="@id/comment_reply_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="" android:layout_below="@id/comment_reply_line" />
+    </RelativeLayout>
+</LinearLayout>

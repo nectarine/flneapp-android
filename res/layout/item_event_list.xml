@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffc2b3aa" android:layout_width="fill_parent" android:layout_height="53.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_layout" android:background="@drawable/list_03" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff474341" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="11.0dip" android:text="" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff69615d" android:id="@id/date_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="3.0dip" android:text="이벤트 기간 : " android:layout_below="@id/title_text" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffec6f00" android:id="@id/period_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" android:layout_toRightOf="@id/date_text" android:layout_below="@id/title_text" />
+    </RelativeLayout>
+</RelativeLayout>

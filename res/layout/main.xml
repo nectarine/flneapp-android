@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:kftc="http://schemas.android.com/apk/res/kr.or.kftc.appstore.android">
+    <RelativeLayout android:id="@id/title_layout" android:background="@drawable/top_bg_01" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/title_img" android:background="@drawable/top_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fragment_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_layout" />
+    <SlidingDrawer android:orientation="vertical" android:id="@id/slide" android:layout_width="fill_parent" android:layout_height="81.0dip" android:layout_alignParentBottom="true" android:bottomOffset="0.0dip" android:topOffset="0.0dip" android:allowSingleTap="true" android:handle="@id/handle_img" android:content="@id/menu_layout" android:animateOnClick="true">
+        <ImageView android:id="@id/handle_img" android:background="@drawable/menu_icon_02" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/menu_layout" android:background="@drawable/menu_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/menu1_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_weight="1.0" android:contentDescription="홈">
+                <ImageView android:id="@id/menu1_img" android:background="@drawable/micon_01_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffa49d8d" android:id="@id/menu1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="홈" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/menu2_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_weight="1.0" android:contentDescription="이벤트">
+                <ImageView android:id="@id/menu2_img" android:background="@drawable/micon_02_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffa49d8d" android:id="@id/menu2_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="이벤트" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/menu3_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_weight="1.0" android:contentDescription="나의 앱 현황">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/menu3_img" android:background="@drawable/micon_03_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <Button android:textSize="9.0sp" android:textColor="#ffffffff" android:id="@id/new_btn" android:background="@drawable/icon_n" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="11" android:layout_toRightOf="@id/menu3_img" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ffa49d8d" android:id="@id/menu3_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="나의 앱현황" android:layout_below="@id/aaaaa_img" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/menu4_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_weight="1.0" android:contentDescription="설정">
+                <ImageView android:id="@id/menu4_img" android:background="@drawable/micon_05_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffa49d8d" android:id="@id/menu4_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="설정" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/menu5_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_weight="1.0" android:contentDescription="종료">
+                <ImageView android:id="@id/menu5_img" android:background="@drawable/micon_06_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffa49d8d" android:id="@id/menu5_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="종료" />
+            </LinearLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+</RelativeLayout>

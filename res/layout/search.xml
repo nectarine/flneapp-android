@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_content_layout" android:background="#fff2ecdc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:kftc="http://schemas.android.com/apk/res/kr.or.kftc.appstore.android">
+    <RelativeLayout android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/search_edit" android:background="@drawable/search_bar" android:paddingLeft="14.0dip" android:paddingRight="54.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff474341" android:layout_gravity="top|center" android:id="@id/search_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="검색창에 검색어를 입력해주세요." />
+</LinearLayout>

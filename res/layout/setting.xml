@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:kftc="http://schemas.android.com/apk/res/kr.or.kftc.appstore.android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/title_layout" android:background="@drawable/tit_bg_01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff483c34" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="설정" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="설정" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/setting_layout_1" android:background="@drawable/list_bg03_off" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="이용안내">
+            <ImageView android:id="@id/info_icon_1" android:background="@drawable/infolist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff8c827d" android:id="@id/device_auth_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="이용안내" android:layout_toRightOf="@id/info_icon_1" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/device_auth_icon_1" android:background="@drawable/icon_03_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_bg03_off" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="모바일기기정보 등록">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/info_icon_1" android:background="@drawable/infolist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff8c827d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="모바일기기정보 등록" android:layout_toRightOf="@id/info_icon_1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff8c827d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="금융앱스토어 PC웹사이트(www.fineapps.co.kr)에서 모바일기기정보를 등록하는 경우에 PC에 보이는 '인증번호'를 등록하는 메뉴입니다." />
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/device_auth_btn_1" android:background="@drawable/btn_07_selector" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="인증번호 등록하기" android:contentDescription="모바일기기정보 등록" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_bg03_off" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="공인인증서 원격 삭제 서비스 인증번호 등록">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/info_icon_1" android:background="@drawable/infolist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff8c827d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="공인인증서 원격삭제 서비스 신청" android:layout_toRightOf="@id/info_icon_1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff8c827d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="금융앱스토어 PC웹사이트(www.fineapps.co.kr)에서 공인인증서 원격삭제 서비스를 신청하는 경우에 PC에 보이는 '서비스 신청번호'를 등록하는 메뉴입니다." />
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/device_auth_btn_2" android:background="@drawable/btn_07_selector" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="서비스 신청번호 등록하기" android:contentDescription="공인인증서 원격삭제 서비스 신청" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/setting_layout_2" android:background="@drawable/list_bg03_off" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="공지사항">
+            <ImageView android:id="@id/info_icon_1" android:background="@drawable/infolist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff8c827d" android:id="@id/device_auth_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="공지사항" android:layout_toRightOf="@id/info_icon_1" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/device_auth_icon_1" android:background="@drawable/icon_03_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/setting_layout_3" android:background="@drawable/list_bg03_off" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="버전정보">
+            <ImageView android:id="@id/info_icon_1" android:background="@drawable/infolist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff8c827d" android:id="@id/device_auth_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="버전정보" android:layout_toRightOf="@id/info_icon_1" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/device_auth_icon_1" android:background="@drawable/icon_03_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/setting_layout_4" android:background="@drawable/list_bg03_off" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="모바일 기기 정보">
+            <ImageView android:id="@id/info_icon_1" android:background="@drawable/infolist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff8c827d" android:id="@id/device_auth_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="단말정보" android:layout_toRightOf="@id/info_icon_1" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/device_auth_icon_1" android:background="@drawable/icon_03_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/tit_bg_02" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff493d35" android:id="@id/event_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="알림설정" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_bg03_off" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/notice_ch_box_1" android:background="@drawable/ch_box_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="푸시 알림 설정 체크 박스" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff8c827d" android:id="@id/notice_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="푸시 알림 설정" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ff8c827d" android:id="@id/notice_desc_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="푸시 알림 설정을 선택 하시면 이벤트 공지, 업데이트 공지 등 금융 앱스토어에서 전하는 소식을 알림으로 받을 수 있습니다." />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_bg04_off" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/notice_ch_box_2" android:background="@drawable/ch_box_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="업데이트 알림 설정 체크 박스" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff8c827d" android:id="@id/notice_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="업데이트 알림 설정" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ff8c827d" android:id="@id/notice_desc_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="다운받은 어플리케이션의 업데이트 버전이 있을 경우 업데이트 알림을 받을 수 있습니다." />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/tit_bg_02" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff493d35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="금융앱스토어 약관" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/setting_layout_8" android:background="@drawable/list_bg03_off" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="금융앱스토어 약관">
+            <ImageView android:id="@id/info_icon_1" android:background="@drawable/infolist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff8c827d" android:id="@id/device_auth_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="금융앱스토어 약관" android:layout_toRightOf="@id/info_icon_1" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/device_auth_icon_1" android:background="@drawable/icon_03_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/setting_layout_5" android:background="@drawable/list_bg03_off" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="이용약관">
+            <TextView android:textSize="14.0sp" android:textColor="#ff8c827d" android:id="@id/device_auth_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="이용약관" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/device_auth_icon_1" android:background="@drawable/icon_03_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/setting_layout_6" android:background="@drawable/list_bg03_off" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="개인정보 처리방침">
+            <TextView android:textSize="14.0sp" android:textColor="#ff8c827d" android:id="@id/device_auth_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="개인정보 처리방침" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/device_auth_icon_1" android:background="@drawable/icon_03_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/setting_layout_7" android:background="@drawable/list_bg03_off" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="고객서비스 헌장">
+            <TextView android:textSize="14.0sp" android:textColor="#ff8c827d" android:id="@id/device_auth_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="고객서비스 헌장" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/device_auth_icon_1" android:background="@drawable/icon_03_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/tit_bg_02" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff493d35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="초기화 설정" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ff8c827d" android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="나의 앱현황(업데이트/전체내역) 및 웹회원 연결해지, 공인인증서원격삭제서비스 신청이 해지처리 됩니다" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_bg03_off" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/info_icon_1" android:background="@drawable/infolist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff8c827d" android:id="@id/device_auth_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="금융앱스토어 앱 사용기록 초기화" android:layout_toRightOf="@id/info_icon_1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff8c827d" android:id="@id/notice_desc_text_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="금융앱스토어의 나의 앱현황이 초기화되고, PC웹사이트를 통한 모바일기기정보 등록 및 공인인증서 원격삭제 서비스 신청내역이 삭제됩니다." />
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/reset_btn" android:background="@drawable/btn_07_selector" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="20.0dip" android:text="초기화 하기" android:contentDescription="금융앱스토어 앱 사용기록 초기화" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
